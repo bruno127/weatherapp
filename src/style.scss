@@ -1,14 +1,16 @@
 $primary: white;
+$secondary: black;
 $shadow: 1px 3px rgba(0,0,0,0.25);
+$warm: red;
+$cold: blue;
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
   
   body {
-    margin: 0 ;
-    padding: 0;
-    font-family: 'montserrat', 'sans-serif';
+    font-family: 'montserrat', sans-serif;
   }
   
   #app {
@@ -20,12 +22,20 @@ $shadow: 1px 3px rgba(0,0,0,0.25);
   
   #app.warm {
     background-image: url('./assets/warm-bg.jpg');
+    .temp {
+        color:$warm;
+    }
+  }
+
+  #app.cold {
+    .temp {
+        color:$cold;
+    }
   }
   
   main {
     min-height: 100vh;
     padding: 25px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.25), rgba (0,0,0,0.75));
   }
   
   .search-box {
@@ -65,7 +75,7 @@ $shadow: 1px 3px rgba(0,0,0,0.25);
         font-weight: 700;
         text-align: center;
         text-shadow:  $shadow;
-        color: $primary;
+        color: $secondary;
       }
   
       .date {
@@ -74,7 +84,7 @@ $shadow: 1px 3px rgba(0,0,0,0.25);
         font-style: italic;
         text-align: center;
         text-shadow:  $shadow;
-        color: $primary;
+        color: $secondary;
       }
   }
   
@@ -95,6 +105,14 @@ $shadow: 1px 3px rgba(0,0,0,0.25);
   
         box-shadow: 3px 6px rgba(0,0,0,0.25);
   
+      }
+
+      .feeling {
+        font-size: 48px;
+        font-weight: 700;
+        color: $primary;
+        font-style: italic;
+        text-shadow: $shadow;
       }
   
       .weather {
