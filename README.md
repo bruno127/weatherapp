@@ -1,24 +1,3 @@
-# weatherapp
+Made a weather app with Vue.JS framework and a SASS css preprocessor by using the OpenWeather API to search and display weather from accross the globe.
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Live -> https://bruno127.github.io/weatherapp/
